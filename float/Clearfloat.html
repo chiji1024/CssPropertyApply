@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>float</title>
+</head>
+<style>
+	/* 清除浮动的方法：底部加一个div，css3伪类
+	用于包含浮动子元素的父元素上
+	 */
+	.fix:after{
+		content:"";
+		display:table;
+		clear:both;
+	}
+	.fix{
+		*zoom:1;
+	}
+	.container{
+		background: #76d3f1;
+	}
+	.float-inner{
+		background: #a0e0a4;
+		float:left;
+		width: 233px;
+		height: 233px;
+	}
+</style>
+<body>
+
+<div class="fix container">
+	<div class="float-inner">懒得放内容啦"</div>
+</div>
+
+</body>
+</html>
