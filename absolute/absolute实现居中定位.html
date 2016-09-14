@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>absolute实现居中定位</title>
+    <style>
+        /*
+        * 这招主要使用在block元素上
+        */
+        .container{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background: #a0e0a4;
+        }
+        .middle{
+            display: block;
+            position: absolute;
+            top:0;right:0;bottom:0;left:0;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            background: #76d3f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="middle"></div>
+    </div>
+</body>
+</html>
