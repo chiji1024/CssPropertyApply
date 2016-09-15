@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38bfb454-3f03-4bc4-812c-d98b39384656" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/z_index/demo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/z_index/z-index应用于提交按钮.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/z_index/层叠顺序规则demo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/z_index/z-index应用于提交按钮.html" afterPath="$PROJECT_DIR$/z_index/z-index应用于提交按钮.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/z_index/层叠顺序规则demo.html" afterPath="$PROJECT_DIR$/z_index/层叠顺序规则demo.html" />
     </list>
     <ignored path="css_property_apply.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,18 +25,7 @@
     <favorites_list name="css_property_apply" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="层叠顺序规则demo.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/z_index/层叠顺序规则demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,6 +48,8 @@
         <option value="$PROJECT_DIR$/float/浮动自适应布局.html" />
         <option value="$PROJECT_DIR$/css_z_index/position+index.html" />
         <option value="$PROJECT_DIR$/css_z_index/z-index应用于提交按钮.html" />
+        <option value="$PROJECT_DIR$/z_index/层叠顺序规则demo.html" />
+        <option value="$PROJECT_DIR$/z_index/z-index应用于提交按钮.html" />
       </list>
     </option>
   </component>
@@ -222,15 +212,15 @@
       <workItem from="1473835893730" duration="11000" />
       <workItem from="1473835927950" duration="3316000" />
       <workItem from="1473859853690" duration="646000" />
-      <workItem from="1473926763849" duration="3212000" />
+      <workItem from="1473926763849" duration="4613000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9580000" />
+    <option name="totallyTimeSpent" value="10981000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="2586" height="1386" extended-state="6" />
+    <frame x="-13" y="-13" width="2586" height="1386" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24990067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -379,18 +369,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/z_index/z-index应用于提交按钮.html">
+    <entry file="file://$PROJECT_DIR$/z_index/层叠顺序规则demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state relative-caret-position="-47">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/z_index/层叠顺序规则demo.html">
+    <entry file="file://$PROJECT_DIR$/z_index/z-index应用于提交按钮.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="21" />
+        <state relative-caret-position="-383">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
           <folding />
         </state>
       </provider>
