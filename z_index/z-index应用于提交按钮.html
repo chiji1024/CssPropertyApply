@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>z-index应用于提交按钮</title>
+</head>
+<style>
+	:after,:before,*{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	html{
+		font-size: 100px;
+	}
+	body{
+		font-size: 14px;
+		line-height: 1.4259;
+	}
+	[type="submit"]{
+		position: absolute;
+		z-index: -1;
+		width: 0;
+		height: 0;
+		padding:0;
+		margin:0;
+		font-size: 0;
+		border:none;
+		/*或者直接opacity: 0;*/
+	}
+	label{
+		text-align: center;
+		display: inline-block;
+		background: #00BFFF;
+		color: #fff;
+		width: 0.4rem;
+		height: 0.23rem;
+		line-height: 0.23rem;
+		font-size: 0.17rem;
+		border-radius: 0.04rem;
+	}
+</style>
+<body>
+	<form action="about:blank">
+		<input type="submit" id="submit">
+		<label for="submit">提交</label>
+	</form>
+
+</body>
+</html>

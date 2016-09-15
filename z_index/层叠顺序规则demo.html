@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>层叠顺序规则demo</title>
+</head>
+<style>
+	.box{
+		/*
+		* 加上以下属性就会到图片的下面
+		* opacity: 0.5;
+		* position: relative / absolute;
+		  z-index: 1;
+		* transform: rotate(10deg);
+		* 父级display: flex / inline-flex
+		*/
+		background: #00BFFF;
+		width: 200px;
+		height: 200px;
+	}
+	.pr {
+		width: 200px;
+		height: 130px;
+		position: relative;
+		left: 100px;
+		z-index: -1;
+	}
+</style>
+<body>
+<div class="box">
+	<img src="./demo.png" class="pr">
+</div>
+<!--img 在div下,其原因见demo图片-->
+
+</body>
+</html>
