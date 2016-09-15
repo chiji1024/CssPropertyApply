@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>line-height的应用</title>
+</head>
+<style>
+/* 图片水平垂直居中 ie8+, 本质上就是吧line-height这位盒子的高度*/
+.center{
+	margin-bottom: 30px; 
+	background: #BEBEBE;
+	line-height: 250px;
+	text-align: center;
+}
+.center>img{
+	width: 200px;
+	height: 180px;
+	vertical-align: middle;
+}
+/*多行文本水平居中*/
+.center>.txt{
+	display: inline-block;
+	line-height: normal; /* 不继承line-height */
+	text-align: left;
+	vertical-align: middle; 
+}
+</style>
+<body>
+<div class="center">
+	<img src="demo.jpg" />
+</div>
+<div class="center">
+	<p class="txt">党的十八大提出，倡导富强、民主、文明、和谐，倡导自由、平等、公正、法治，倡导爱国、敬业、诚信、友善，积极培育和践行社会主义核心价值观。富强、民主、文明、和谐是国家层面的价值目标，自由、平等、公正、法治是社会层面的价值取向，爱国、敬业、诚信、友善是公民个人层面的价值准则，这24个字是社会主义核心价值观的基本内容</p>
+</div>
+</body>
+</html>
