@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>line-height决定盒子的高度</title>
+    <style>
+        .test1{
+            font-size:20px;
+            line-height:0;
+            border:1px solid #a0e0a4;
+            background: #a0e0a4;
+        }
+        .test2{
+            font-size:0;
+            line-height:20px;
+            border:1px solid #ffffff;
+            background: #76d3f1;
+        }
+    </style>
+</head>
+<body>
+<!--test1盒子的高度为0，inline-box的的高度由一行中最大的line-height决定
+    所以line-box高度为0，盒子高度也就为零了-->
+<div class="test1">测试</div>
+<!--test2说明盒子高度与字体大小并没有关系-->
+<div class="test2">测试</div>
+
+</body>
+</html>
