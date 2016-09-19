@@ -1,0 +1,2 @@
+html{overflow: hidden;}
+/*不需要设置body的overflow的属性，滚动条是由html元素创建*/

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>overflow:ellipsis</title>
+</head>
+<style>
+	/*单行文本溢出省略号，容器必须要有确定的宽度，inline元素无效*/
+	.oe{
+		display:inline-block;
+		width:100px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+</style>
+<body>
+<button class="oe" alt="富强、民主、文明、和谐、自由、平等、公正、法治">富强、民主、文明、和谐、自由、平等、公正、法治</button>
+</body>
+</html>

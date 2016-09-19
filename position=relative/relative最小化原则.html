@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>relative&absolute</title>
+</head>
+<body>
+<style>
+	.rel{
+		position:relative;
+	}
+	.absolute{
+		position:absolute;
+		left:60px;
+		top:60px;
+	}
+</style>
+<div>
+	<div class="rel"><!-- 不占用任何尺寸，创建一个新的层叠上下文 -->
+		<img src="demo.png" alt="图片" class="absolute" style="width:200px;" />
+	</div>
+	<!-- 使用relative和absolute时，最好在absolute的父级加一个relative的div，
+	而不是在整体的父级div使用relative -->
+	<div>hello</div>
+	<div>world!</div>
+</div>
+</body>
+</html>

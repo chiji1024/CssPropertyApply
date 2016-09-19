@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>padding两栏自适应布局</title>
+	<style>
+		*{padding:0;margin:0;}
+		ul,li{
+			list-style: none;
+			text-align: center;
+		}
+		.box{
+			overflow: hidden;
+			resize: vertical;
+		}
+		.left,.right{
+			font-size: 19px;
+			line-height: 1.4;
+			width:50%;
+			box-sizing: border-box;
+			float: left;
+			margin-bottom: -600px;
+			padding-bottom: 600px;
+		}
+		.left{
+			background: orange;
+		}
+		.right{
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="box">
+		<div class="left">
+			<ul>
+				<li>左边</li>
+				<li>左边</li>
+				<li>左边</li>
+				<li>左边</li>
+				<li>左边</li>
+				<li>左边</li>
+				<li>左边</li>
+				<li>左边</li>
+				<li>左边</li>
+				<li>左边</li>
+				<li>左边</li>
+				<li>左边</li>
+				<li>左边</li>
+				<li>左边</li>
+				<li>左边</li>
+				<li>左边</li>
+			</ul>
+		</div>
+		<div class="right">
+			<ul>
+				<li>右边</li>
+				<li>右边</li>
+				<li>右边</li>
+				<li>右边</li>
+				<li>右边</li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>

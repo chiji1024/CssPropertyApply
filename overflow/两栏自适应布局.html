@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+</head>
+<style>
+	html,div,body{
+		margin:0; padding:0;
+	}
+	/* 是元素BFC化,BFC元素不予float重叠 */
+	.cell{
+		display: table-cell;
+		width:4000px;
+		*display: inline-block;
+		*width: auto;
+		height:200px;
+		background: #00bfff;
+	}
+	.left{
+		float:left;
+		width:20%;
+		height:200px;
+		background: #dcdcdc;
+	}
+
+</style>
+
+<body>
+	
+	<div class="left">
+		
+	</div>
+	<div class="cell">
+		
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>inline padding实现分割线</title>
+	<style>
+		p{
+			margin:0;
+			padding:0;
+			background: #00ffff;
+		}
+		.divide-line{
+			padding-top: 14px;
+			padding-right: 12px;
+			padding-bottom: 1px;
+			margin-left: 12px;
+			border-left: 2px solid;
+			/*就是一个12px宽的盒子的左边边框*/
+			font-size: 0;
+		}
+	</style>
+</head>
+<body>
+	<p>登录<span class="divide-line"></span>注册</p>
+</body>
+</html>
