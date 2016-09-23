@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>margin无效(取负值)</title>
+</head>
+<body>
+<!--
+	margin本质上是改变元素的可见宽高
+	margin取负值的时候会增大可见宽高, 使得元素看起来好像向相反的方向移动了
+	*但超过父级容器宽高的时候不会超出容器
+-->
+	<div style="background:#f0f3f9;height:200px">
+		<img src="" style="width:400px;height:260px;margin-top:-400px;border: 1px solid #45c018;">
+		margin-top:-400px
+	</div>
+</body>
+</html>

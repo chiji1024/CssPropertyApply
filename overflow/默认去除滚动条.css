@@ -1,2 +1,7 @@
 html{overflow: hidden;}
 /*不需要设置body的overflow的属性，滚动条是由html元素创建*/
+/*防止滚动条在页面加载时出现影响布局, ie9+*/
+.container{
+    overflow: hidden;
+    padding-right: calc(100vm - 100%);/*滚动条宽度*/
+}
