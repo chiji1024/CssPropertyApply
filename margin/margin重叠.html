@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>margin重叠</title>
+    <style>
+        body{
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+        /*
+        * 兄弟元素之间的margin重叠
+        */
+        .brother-margin p{
+            line-height: 2em;
+            margin: 1em 0;
+            background: #66d9ef;
+        }
+        /*父级第一个/最后一个元素margin重叠,父元素不是BFC&子元素无内容*/
+        .father{
+            background: #ffe792;
+        }
+        .son{
+            margin-top: 80px;
+        }
+        /*空元素自己的margin重叠*/
+        .descent{
+            margin: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <h4>1. 兄弟元素之间的margin重叠，同时设置margin的top,bottom值，为日后即使最后一个元素出去后依旧保持样式间隔</h4>
+    <div class="brother-margin">
+        <p>第一行:margin: 1em 0;</p>
+        <p>第二行:margin: 1em 0;</p>
+    </div>
+
+    <h4>2. 父级第一个/最后一个元素margin重叠,父元素不是BFC&子元素无border,padding</h4>
+    <div class="father">
+        <div class="son">son: margin-top: 80px</div>
+    </div>
+
+    <h4>3. 空元素自己的margin重叠, 子元素设置了margin: 1em 0;</h4>
+    <div class="father" style="overflow: hidden;">
+        <div class="descent"></div>
+    </div>
+    <p style="background: #6ccab8;">一行文字的高度</p>
+
+</body>
+</html>
