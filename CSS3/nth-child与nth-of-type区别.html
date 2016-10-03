@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>nth-child与nth-of-type区别</title>
+    <style>
+        /*section的第二个子元素*/
+        /*section :nth-child(2){
+            color: #45c018;
+        }*/
+        /*以下效果与上面相同, p与nth-child之间没有空格，代表父元素的第二个子元素并且是p元素*/
+        /*p:nth-child(2){
+            color: #45c018;;
+        }*/
+        /*代表父元素的第二个p元素*/
+        /*p:nth-of-type(2){
+            color: #ffe792;
+        }*/
+    </style>
+</head>
+<body>
+<section>
+    <div>我是第一个普通的div子标签</div>
+    <p>我是第1个p标签</p>
+    <p>我是第2个p标签</p>
+</section>
+</body>
+</html>
