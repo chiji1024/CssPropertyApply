@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>border-radius实现圆形</title>
+    <style>
+        .circle{
+            width: 100px;
+            height: 100px;
+            background: #66d9ef;
+            margin: 40px;
+        }
+        /* border-radius百分比实现，
+         * 只适用于正方形, 不过一般也够用了
+         */
+        .radius-test1{
+            border-radius: 50%;
+        }
+        /*border-radius具体数值实现*/
+        .radius-test2{
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle radius-test1"></div>
+    <div class="circle radius-test2"></div>
+</body>
+</html>
