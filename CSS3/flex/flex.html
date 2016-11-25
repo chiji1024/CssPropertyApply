@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style>
+         *,*:after,*:before{
+             -webkit-box-sizing: border-box;
+             -moz-box-sizing: border-box;
+             box-sizing: border-box;
+         }
+
+        #flexContainer{
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+
+        #flexContainer > .flex-item{
+            flex: auto;
+            -webkit-flex: auto;
+            background: #6ccab8;
+        }
+
+        #flexContainer > .raw-item{
+            width: 5rem;
+            background: #ae81ff;
+        }
+
+ /*flex-grow specifies what amount of space inside the flex container the item should take up.*/
+ /*The flex-basis CSS property specifies the flex basis which is the initial main size of a flex item*/
+
+        #content{
+            -ms-box-orient: horizontal;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+
+            -webkit-justify-content: space-around;
+            justify-content: space-around;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-align-items: stretch;
+            align-items: stretch;
+
+            margin-top: 10px;
+
+        }
+
+         .box {
+             /*flex-grow: 1;*/
+
+             border: 3px solid rgba(0,0,0,.2);
+         }
+
+         .box1 {
+             /*flex-grow: 2;*/
+
+             border: 3px solid rgba(0,0,0,.2);
+         }
+    </style>
+</head>
+<body>
+
+<div id="flexContainer">
+    <div class="flex-item">
+        flex box click me to toggle raw item
+    </div>
+    <div class="raw-item">Raw Item</div>
+</div>
+
+<div id="content">
+    <div class="box" style="background-color:red;">A</div>
+    <div class="box" style="background-color:lightblue;">B</div>
+    <div class="box" style="background-color:yellow;">C</div>
+    <div class="box1" style="background-color:brown;">D</div>
+    <div class="box1" style="background-color:lightgreen;">E</div>
+    <div class="box" style="background-color:brown;">F</div>
+</div>
+
+<script>
+    !function () {
+        var isRawDisplayed = true;
+        var flexItem = document.querySelector('#flexContainer > .flex-item');
+        var rawItem = document.querySelector('#flexContainer > .raw-item');
+        rawItem.style.display = 'block';
+        flexItem.addEventListener('click', function (event) {
+            if(isRawDisplayed){
+                rawItem.style.display = 'none';
+                isRawDisplayed = false;
+            }else{
+                rawItem.style.display = 'block';
+                isRawDisplayed = true;
+            }
+        })
+    }()
+
+</script>
+
+</body>
+</html>
